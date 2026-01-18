@@ -1,0 +1,49 @@
+# Site settings
+title: Jared Cervantes
+email: ""
+description: >-
+  Personal website of Jared Cervantes
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://jaredy899.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Social links
+social:
+  bluesky: https://bsky.app/profile/jaredcervantes.com
+  github: https://github.com/Jaredy899
+  linkedin: https://www.linkedin.com/in/jared-cervantes
+  home_apps: https://home.jaredcervantes.com
+
+# Build settings
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Permalink structure for blog posts
+permalink: /blog/:title/
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /blog/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Exclude from processing
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

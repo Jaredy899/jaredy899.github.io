@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<div class="container mx-auto px-4 py-8">
+  <div class="logo-container-small">
+    <a href="{{ '/' | relative_url }}" class="logo-link" aria-label="Return to home page">
+      {% include jc-logo.html %}
+    </a>
+  </div>
+  <article class="prose dark:prose-invert mx-auto fade-in blog-post">
+    <time class="text-sm text-gray-500 dark:text-gray-400 blog-date">
+      {{ page.pubDate | date: "%B %-d, %Y" }}
+    </time>
+    <div class="mt-8 blog-content">
+      {{ content }}
+    </div>
+  </article>
+</div>
