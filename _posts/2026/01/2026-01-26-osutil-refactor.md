@@ -156,3 +156,4 @@ OSutil is still easy to install on Linux and macOS:
 
 ```bash
 sh <(curl -fsSL jaredcervantes.com/os)
+```
